@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&family=Oswald&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>vinhatto-converter</title>
+</head>
+<body>
+    <img id="id-logo" src="./assets/logo.gif" alt="logo-vinhatto-converter">
+
+    <main>
+        <label>
+            converter <b>de</b>
+            <select id="select-a-converter">
+                <option value="real">R$ Real Brasileiro</option>
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">Bitcoin</option>
+            </select>
+        </label>
+
+        <label>
+            converter <b>para</b>
+            <select id="select-convertido">
+                <option value="dolar">US$ Dólar Americano</option>
+                <option value="euro">€ Euro</option>
+                <option value="libra">£ Libra</option>
+                <option value="bitcoin">Bitcoin</option>
+                <option value="real">R$ Real Brasileiro</option>
+            </select>
+        </label>
+        <label>
+            valor
+            <input id="input-valor-entrada" placeholder="$10.000">
+        </label>
+        <button class="convert-button">converter</button>
+
+        <aside>
+            <section>
+                <img src="./assets/brasil 2.png" alt="logo-moeda-a-converter">
+                <p class="moeda">Real</p>
+                <p class="moeda-valor-entrada">R$ 00,00</p>
+            </section>
+        
+        <img id="arrow" src="./assets/Vector.png" alt="seta">
+
+            <section>
+                <img class="img-currency" src="./assets/dolar.png" alt="logo-moeda-convertida">
+                <p class="moeda" id="nome-moeda-convertida">Dólar</p>
+                <p class="moeda-valor-convertida">US$ 00,00</p>
+            </section>
+        </aside>
+    </main>
+</body>
+<script src="./script.js"></script>
+</html>
