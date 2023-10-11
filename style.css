@@ -103,3 +103,17 @@ section {
     font-size: 20px;
     font-weight: 700;
 }
+
+@media (orientation:portrait) and (max-width:450px){
+    body{
+        background-color: rgb(138, 81, 252, 0.5);
+    }
+
+    #id-logo {
+        display: none;
+    }
+
+    main{
+        margin-top: 45px;
+    }
+}
